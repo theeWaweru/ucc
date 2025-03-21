@@ -1,6 +1,6 @@
 // This is app/page.tsx
 import MainLayout from "@/components/layout/MainLayout";
-import LivestreamBanner from "@/components/sermons/LivestreamBanner";
+import LivestreamBanner from "@/components/shared/LivestreamBanner";
 import LatestSermons from "@/components/sermons/LatestSermons";
 import Link from "next/link";
 import Script from "next/script";

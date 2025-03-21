@@ -12,6 +12,18 @@ This website serves as a digital platform for Uhai Centre Church with the follow
 - Prayer request submission
 - Secure admin dashboard for content management
 
+## Project Structure
+
+A detailed file structure tree is available in [file-structure.md](file-structure.md).
+
+The project follows a standard Next.js App Router structure with these main directories:
+- `app/`: Pages and API routes
+- `components/`: Reusable React components
+- `lib/`: Utility functions and services
+- `models/`: MongoDB schemas
+- `public/`: Static assets
+- `scripts/`: Utility scripts for setup and maintenance
+
 ## Technology Stack
 
 - **Frontend**: Next.js 15.2.3, React 19, TypeScript, Tailwind CSS
@@ -150,3 +162,23 @@ This will generate an `error-report.md` file detailing any build issues, TypeScr
 ## License
 
 This project is private and proprietary to Uhai Centre Church and David Waweru Ngari.# ucc
+
+## Admin Setup
+
+The project includes a utility script for setting up admin users:
+
+```bash
+# Basic setup with default options
+npm run setup-admin
+
+# Reset password for existing admin user
+npm run setup-admin -- --reset-password
+
+# Use API method (requires server running)
+npm run setup-admin -- --api
+
+# Customize admin user details
+npm run setup-admin -- --email admin@example.com --password mypassword --name "Custom Admin"
+
+# For help and all available options
+npm run setup-admin -- --help
