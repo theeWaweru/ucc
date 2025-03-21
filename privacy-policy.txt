@@ -1,0 +1,37 @@
+## Prayer Request Privacy
+
+At Uhai Centre Church, we understand that prayer requests often contain sensitive and personal information. We are committed to protecting your privacy while still enabling our prayer team to intercede on your behalf. Here's how we handle prayer request data:
+
+### For Standard Prayer Requests
+
+When you submit a standard (non-anonymous) prayer request, we collect your name, email address, optional phone number, and the content of your prayer request. This information is:
+
+- Stored securely in our database
+- Accessible only to authorized members of our prayer team
+- Used solely for the purpose of praying for your needs and communicating with you about your request
+- Never shared with third parties or used for marketing purposes
+- Retained for a period of one year, after which it is automatically deleted
+
+### For Anonymous Prayer Requests
+
+When you submit an anonymous prayer request:
+
+- We collect your name and email address solely to send you a confirmation and potential follow-up communications
+- Your personal information (name, email, phone) is **not** stored in our database
+- Your personal information is immediately redacted and never visible to our prayer team
+- Only the content of your prayer request is saved and made available to our prayer team
+- Your identity remains completely protected
+
+### Email Communications
+
+For all prayer requests, we send:
+
+1. A confirmation email to you acknowledging receipt of your request
+2. A notification to our prayer team with the details of your request (anonymized if you selected that option)
+3. Optional status updates if our prayer team marks your request as "in progress" or "completed"
+
+You can reply directly to any prayer request email to communicate with our prayer team. If you submitted anonymously, your replies will still maintain your anonymity.
+
+### Data Security & Management
+
+All prayer request data is stored in encrypted format and synchronized with a secure Google Sheets document accessible only to authorized church administrators. If you wish to have your prayer request data deleted before the standard retention period, please contact us at [privacy@uhaicentre.church](mailto:privacy@uhaicentre.church) and we will promptly remove your information from all our systems.
