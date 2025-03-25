@@ -1,3 +1,4 @@
+// models/Sermon.ts
 import mongoose, { Schema, Document } from "mongoose";
 
 export interface ISermon extends Document {

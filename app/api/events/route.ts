@@ -1,7 +1,7 @@
 // Update app/api/events/route.ts
 import { NextResponse } from "next/server";
 import dbConnect from "@/lib/db/connect";
-import Event from "../../../models/Events";
+import Event from "../../../models/Event";
 
 // Helper function to calculate next occurrence based on recurrence pattern
 function getNextOccurrences(event: any, startDate: Date, endDate: Date) {

@@ -182,3 +182,23 @@ npm run setup-admin -- --email admin@example.com --password mypassword --name "C
 
 # For help and all available options
 npm run setup-admin -- --help
+
+## Environment Setup
+
+The project includes a utility script for managing environment variables:
+
+```bash
+# Interactive setup (recommended for new developers)
+npm run env:setup
+
+# Check if all required environment variables are set
+npm run env:check
+
+# Update .env file with any missing variables
+npm run env:update
+
+# List all environment variables
+npm run env:list
+
+# Set specific environment variables
+node scripts/env-manager.js --set "NEXTAUTH_URL=http://localhost:3000" "NEXTAUTH_SECRET=my-secret"

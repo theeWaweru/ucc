@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "setup-admin": "node scripts/setup-admin.js"
+    "setup-admin": "node scripts/setup-admin.js",
+    "env:check": "node scripts/env-manager.js --check",
+    "env:setup": "node scripts/env-manager.js --interactive",
+    "env:update": "node scripts/env-manager.js --update",
+    "env:list": "node scripts/env-manager.js --list"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",

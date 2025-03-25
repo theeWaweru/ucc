@@ -10,6 +10,11 @@ export interface IPrayerRequest extends Document {
   status: "new" | "in-progress" | "completed";
   adminNotes?: string;
   prayedBy?: string[];
+  category: string;
+  wantFollowUp: boolean;
+  followUpStatus?: "pending" | "scheduled" | "completed";
+  followUpDate?: Date;
+  followUpNotes?: string;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -59,6 +64,37 @@ const PrayerRequestSchema: Schema = new Schema(
         required: false,
       },
     ],
+    // New fields for enhanced functionality
+    category: {
+      type: String,
+      enum: [
+        "personal",
+        "health",
+        "family",
+        "financial",
+        "spiritual",
+        "relationships",
+        "career",
+        "grief",
+        "other",
+      ],
+      default: "personal",
+    },
+    wantFollowUp: {
+      type: Boolean,
+      default: false,
+    },
+    followUpStatus: {
+      type: String,
+      enum: ["pending", "scheduled", "completed"],
+      default: "pending",
+    },
+    followUpDate: {
+      type: Date,
+    },
+    followUpNotes: {
+      type: String,
+    },
   },
   {
     timestamps: true,

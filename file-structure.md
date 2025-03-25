@@ -1,6 +1,6 @@
 # Project File Structure
 
-Generated on: 2025-03-21T12:47:30.817Z
+Generated on: 2025-03-25T13:36:49.205Z
 
 ```
 └── app
@@ -30,6 +30,10 @@ Generated on: 2025-03-21T12:47:30.817Z
     │   ├── prayer
     │   │   ├── [id]
     │   │   │   ├── page.tsx
+    │   │   ├── follow-up
+    │   │   │   ├── page.tsx
+    │   │   ├── statistics
+    │   │   │   ├── page.tsx
     │   │   ├── page.tsx
     │   ├── reports
     │   │   ├── payments
@@ -41,6 +45,11 @@ Generated on: 2025-03-21T12:47:30.817Z
     │   │   ├── new
     │   │   │   ├── page.tsx
     │   │   ├── page.tsx
+    │   ├── settings
+    │   │   ├── page.tsx
+    │   ├── testing
+    │   │   ├── prayer
+    │   │   │   └── page.tsx
     │   ├── users
     │   │   ├── page.tsx
     │   ├── layout.tsx
@@ -76,6 +85,7 @@ Generated on: 2025-03-21T12:47:30.817Z
     │   │   │   └── route.ts
     │   ├── auth
     │   │   ├── [...nextauth]
+    │   │   │   └── auth.ts
     │   │   │   └── route.ts
     │   ├── blog
     │   │   ├── [slug]
@@ -100,6 +110,12 @@ Generated on: 2025-03-21T12:47:30.817Z
     │   │   │   └── route.ts
     │   ├── prayer
     │   │   ├── [id]
+    │   │   │   ├── follow-up
+    │   │   │   │   ├── route.ts
+    │   │   │   ├── route.ts
+    │   │   ├── follow-up
+    │   │   │   ├── route.ts
+    │   │   ├── statistics
     │   │   │   ├── route.ts
     │   │   ├── route.ts
     │   ├── sermons
@@ -135,8 +151,6 @@ Generated on: 2025-03-21T12:47:30.817Z
     ├── contact
     │   ├── metadata.ts
     │   ├── page.tsx
-    ├── context
-    │   ├── AuthContext.tsx
     ├── events
     │   ├── metadata.ts
     │   ├── page.tsx
@@ -151,18 +165,24 @@ Generated on: 2025-03-21T12:47:30.817Z
     │   │   ├── page.tsx
     │   ├── metadata.ts
     │   ├── page.tsx
+    ├── auth.ts
     ├── favicon.ico
     ├── globals.css
     ├── layout.tsx
     ├── page.tsx
 └── components
     ├── admin
+    │   ├── PrayerFollowUpSystem.tsx
+    │   ├── PrayerNavigation.tsx
+    │   ├── PrayerStatsDashboard.tsx
+    │   ├── PrayerSystemTester.tsx
     │   ├── YouTubeSync.tsx
     ├── analytics
     │   ├── PageViewTracker.tsx
     ├── context
     │   ├── AuthContext.tsx
     ├── forms
+    │   ├── EnhancedPrayerRequestForm.tsx
     │   ├── EventForm.tsx
     │   ├── ImageUpload.tsx
     │   ├── PrayerRequestForm.tsx
@@ -174,12 +194,12 @@ Generated on: 2025-03-21T12:47:30.817Z
     │   ├── MainLayout.tsx
     ├── sermons
     │   ├── LatestSermons.tsx
+    ├── shared
     │   ├── LivestreamBanner.tsx
     ├── ui
     │   ├── ShareButtons.tsx
     ├── youtube
     │   ├── EnhancedYouTubeEmbed.tsx
-    │   ├── LivestreamBanner.tsx
     │   ├── VideoEmbed.tsx
     │   ├── VideoGrid.tsx
     │   ├── YouTubeFallback.tsx
@@ -190,6 +210,7 @@ Generated on: 2025-03-21T12:47:30.817Z
     ├── api
     │   ├── sheets
     │   │   ├── index.ts
+    │   ├── api-utils.ts
     │   ├── mpesa.ts
     │   ├── youtube.ts
     ├── cloudinary
@@ -204,49 +225,42 @@ Generated on: 2025-03-21T12:47:30.817Z
 └── models
     ├── Admin.ts
     ├── Blog.ts
-    ├── Events.ts
+    ├── Event.ts
     ├── EventTracking.ts
     ├── index.ts
     ├── PageView.ts
-    ├── Payments.ts
+    ├── Payment.ts
     ├── PrayerRequest.ts
-    ├── Sermons.ts
+    ├── Sermon.ts
 └── public
-    ├── file.svg
-    ├── globe.svg
-    ├── next.svg
-    ├── vercel.svg
-    ├── window.svg
 └── scripts
-    ├── admin-setup.js
-    ├── direct-admin-setup.js
     ├── directory-check.js
-    ├── env-helper.js
+    ├── email-test.js
+    ├── env-manager.js
     ├── error-tracker.js
-    ├── setup.js
-    ├── simple-admin-setup.js
+    ├── setup-admin.js
+    ├── sheets-test.js
     ├── simple-connect.js
-    ├── update-env.js
 └── styles
     ├── admin.module.css
+└── .env
 └── .env.local
 └── .gitignore
+└── Client-Components.md
 └── error-report.md
 └── middleware.ts
 └── next-env.d.ts
 └── next.config.mjs
-└── next.config.ts
 └── package-lock.json
 └── package.json
 └── postcss.config.mjs
 └── privacy-policy.txt
 └── README.md
-└── readme.txt
 └── tsconfig.json
 └── tsconfig.tsbuildinfo
 ```
 
 ## Statistics
 
-- Total files: 143
-- Total directories: 98
+- Total files: 149
+- Total directories: 106
